@@ -1,0 +1,265 @@
+</<!DOCTYPE Home html>
+<html lang="en" dir="ltr">
+   <head>
+      <link rel="stylesheet" href="stylesheet/responsive-nav.css">
+      <script src="stylesheet/responsive-nav.js"></script>
+      <meta charset="utf-8">
+      <link rel="stylesheet" type=text/css href="stylesheet/style.css">
+      <title> Home - Wootton TSA </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- this is necessary for mobile use -->
+      <link rel="stylesheet" href="https://use.typekit.net/msg8itr.css">
+      <!-- this is for the font -->
+      <!---this is for the multi-tab part of the page--->
+   </head>
+   <body>
+      <nav class="nav-collapse">
+         <div class="nav" id="menu">
+            <ul>
+               <li><a class="active" href = "index.html">Home</a></li>
+               <li><a href = "Project.html">Projects</a></li>
+               <li><a class="logo">Wootton Technology Student Association</a></li>
+               <li><a href = "Activities.html">Activites</a></li>
+               <li><a href = "Bylaws.html">Bylaws</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="slideshow">
+         <div class="slideshow-image" style="background-image: url('images/Memorial.jpg')">
+         </div>
+         <div class="slideshow-image"
+            style="background-image: url('images/Mainside.jpg')"></div>
+         <div class="slideshow-image" style="background-image: url('images/Audi.jpg')">
+         </div>
+         <div class="slideshow-image"
+            style="background-image: url('images/Field.jpg')"></div>
+      </div>
+      <!-- Display the countdown timer in an element -->
+      <div class="events">
+         <h1> Important Dates </h1>
+         <h1 id="left"> TSA 2021 National Conference </h1>
+         <h1 id="right"> Events </h1>
+         <p id="righttext"> > MDTSA State Conference <
+            <br/> North County HS
+            <br/> March 2021
+            <br/>
+            <br/>> National TSA Conference<
+            <br/> Orlando, Florida
+            <br/> June 23-27, 2021
+            <br/>
+            <br/>
+            <br/>
+         <p id="clock"></p>
+         <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("Jun 23, 2021 17:00:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+              // Get today's date and time
+              var now = new Date().getTime();
+
+              // Find the distance between now and the count down date
+              var distance = countDownDate - now;
+
+              // Time calculations for days, hours, minutes and seconds
+              var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+              var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+              var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+              var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+              // Output the result in an element with id="clock"
+              document.getElementById("clock").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+
+              // If the count down is over, write some text
+              if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("clock").innerHTML = "EXPIRED";
+              }
+            }, 1000);
+         </script>
+         <div class="vl"></div>
+      </div>
+      <div class="officers">
+         <h1> Meet Our Officers </h1>
+         <br/>
+         <br/>
+         <br/>
+         <div class="wrapper">
+            <ul class="stage clearfix">
+               <li class="box">
+                  <div class="twist" onclick="return true">
+                     <div class="image">
+                        <img src="images/Angela.jpeg" alt="Angela Cheng">
+                        <div class="officernames">
+                           <b>President - Angela Cheng</b>
+                        </div>
+                     </div>
+                     <div class="bio">
+                        <p> "If plan A doesn't work, there are 25 more letters in the alphabet. Stay cool!" - Claire Cook</p>
+                        <p>
+                           Angela is the president and founder of Wootton TSA. As a senior,
+                           she hopes to major in computer science/cybersecurity. In her free time, Angela strongly advocates
+                           for women in STEM and enjoys practicing the piano, watching YouTube, and sleeping.
+                           Follow her on insta @angela_cheng7
+                        </p>
+                        <p>
+                           President: It shall be the duty of the president of TSA to preside at all meetings; to make
+                           necessary committee appointments including the designation of a committee chairperson; to
+                           develop with the Executive Committee a program of work for the term of office; and to be available,
+                           as necessary, in promoting the general welfare of TSA.
+                        </p>
+                     </div>
+                  </div>
+               </li>
+               <li class="box">
+                  <div class="twist" onclick="return true">
+                     <div class="image">
+                        <img src="images/Anna.jpeg" alt="Anna Chen">
+                        <div class="officernames">
+                           <b>Vice President - Anna Chen</b>
+                        </div>
+                     </div>
+                     <div class="bio">
+                        <p>"People who love to eat are the best people." - Julia Child</p>
+                        <p>
+                           Anna is the current vice president of Wootton's TSA Chapter. She enjoys
+                           and music and hopes to major in computer science in college next year. One of
+                           Anna's favorite things is food. If you have food, she will want some too.
+                        </p>
+                        <p>
+                           Vice-President: It shall be the duty of the vice-president to serve in any capacity
+                           as directed by the president; to accept the responsibility of the president as occasion
+                           may demand; to serve as chairperson of the TSA Council of State Presidents; and to be
+                           available, as necessary, in promoting the general welfare of TSA.
+                        </p>
+                     </div>
+                  </div>
+               </li>
+               <li class="box">
+                  <div class="twist" onclick="return true">
+                     <div class="image">
+                        <img src="images/Or.jpg" alt="Or Goldshtein">
+                        <div class="officernames">
+                           <b>Secretary - Or Goldshtein</b>
+                        </div>
+                     </div>
+                     <div class="bio">
+                        <p>"No matter how perfect the day is, it always has to end." - Stephenie Meyer, Twilight</p>
+                        <p>
+                           Or is the secretary of Wootton's TSA chapter. As a senior, she has applied
+                           to colleges in hopes of majoring in management. In her free time, Or likes
+                           to read books and give back to the community.
+                        </p>
+                        <p>
+                           Secretary: It shall be the duty of the secretary to serve in any capacity
+                           as directed by the president; to record proceedings of all meetings; and to
+                           be available, as necessary, in promoting the general welfare of TSA.
+                        </p>
+                     </div>
+                  </div>
+               </li>
+               <li class="box">
+                  <div class="twist" onclick="return true">
+                     <div class="image">
+                        <img src="images/Ruonan.jpeg" alt="Ruonan Feng">
+                        <div class="officernames">
+                           <b>Treasurer - Ruonan Feng</b>
+                        </div>
+                     </div>
+                     <div class="bio">
+                        <p>"Difficulties are meant to rouse, not discourage. The human spirit is to grow strong by conflict." - William Ellery Channing</p>
+                        <p>
+                           Ruonan is the treasurer of Wootton's TSA chapter. She doesn't know what she wants to major in yet,
+                           but she really enjoys STEM. She is also apart of Science Olympiad and Paper Bridges.
+                        </p>
+                        <p>
+                           Treasurer: It shall be the duty of the treasurer to serve in any capacity
+                           as directed by the president; to keep records and membership reports; and
+                           to be available, as necessary, promoting the general welfare of TSA.
+                        </p>
+                     </div>
+                  </div>
+               </li>
+               <li class="box">
+                  <div class="twist" onclick="return true">
+                     <div class="image">
+                        <img src="images/AngelaW.jpg" alt="Angela Wong">
+                        <div class="officernames">
+                           <b>Sergeant-At-Arms - Angela Wong</b>
+                        </div>
+                     </div>
+                     <div class="bio">
+                        <p>"Angela Cheng < Angela Wong"</p>
+                        <p>
+                           Angela is the current Sergeant-At-Arms of Wootton's TSA Chapter.
+                           She is a senior hoping to major in engineering and cybersecurity
+                           in the future. She enjoys pizza and horses. If you'd like to sell your horse,
+                           please contact her at horsesrock240@yahoo.com.
+                        </p>
+                        <p>
+                           Sergeant-at-Arms: It shall be the duty of the sergeant-at-arms to serve in any
+                           capacity as directed by the president; to assist in the preparation and control
+                           of the meeting place, in the event that a parliamentarian is not appointed by
+                           the president; to assist in conducting all meetings according to parliamentary
+                           procedure as set forth by the current edition of Robert's Rules of Order, Newly
+                           Revised; and to be available, as necessary, in promoting the general welfare of TSA.
+                        </p>
+                     </div>
+                  </div>
+               </li>
+               <li class="box">
+                  <div class="twist" onclick="return true">
+                     <div class="image">
+                        <img src="images/Sona.jpg" alt="Sona Chudamani">
+                        <div class="officernames">
+                           <b>Reporter - Sona Chudamani</b>
+                        </div>
+                     </div>
+                     <div class="bio">
+                        <p>“Being a taylor swift fan isn’t a hobby, it’s a lifestyle”</p>
+                        <p>
+                           Sona is the Reporter of the Wootton TSA Chapter. As an avid fan of engineering
+                           and computer science, she hopes to pursue a career in one of the two topics
+                           and make the world a safer place. Advocating for girls education, Sona is also
+                           a part of her school’s She’s the First organization, which raises money for girls
+                           in 3rd world countries.
+                        </p>
+                        <p>
+                           Reporter: It shall be the duty of the reporter to serve in any capacity as
+                           directed by the president; to accumulate and keep up-to-date information on
+                           the history of the association; to prepare articles for TSA publications,
+                           professional magazines and journals, newspapers and other news media; to contact
+                           other association members concerning news items for publication; and to be available,
+                           as necessary, in promoting the general welfare of TSA.
+                        </p>
+                     </div>
+                  </div>
+               </li>
+            </ul>
+         </div>
+         <!-- /wrapper -->
+      </div>
+      <div class="socialmedia">
+         <h1> Contact Us </h1>
+         <div class="social">
+            <a target="_blank" href="https://www.instagram.com/woottontsa/?hl=en">
+            <img class="social" src="images/instagram.png"/></a>
+            <a target="_blank" href="mailto:wootton.tsa@gmail.com">
+            <img class="social" src="images/gmail.png"/></a>
+         </div>
+      </div>
+      <br/>
+      <footer>Wootton HS Technology Student Association Webmaster
+         <br/>
+         COPYRIGHT © 2020 Wootton High School TSA
+      </footer>
+      <!-- /container -->
+      </div>
+      <script>
+         var nav = responsiveNav(".nav-collapse");
+      </script>
+   </body>
+</html>
